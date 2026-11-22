@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#124b36">
+  <meta name="description" content="Pendaftaran Santri Baru PPDB Darut Taqwa 4. Daftarkan putra-putri Anda secara online.">
+  <title>PPDB Darut Taqwa 4 | Pendaftaran Santri Baru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="PPDB Darut Taqwa 4">
+        <span class="brand-mark">DT</span>
+        <span class="brand-name">DARUT TAQWA <small>4 · PENERIMAAN SANTRI BARU</small></span>
+      </a>
+      <span class="secure-note"><span class="secure-dot"></span> Pendaftaran online resmi</span>
+    </header>
+
+    <main class="layout">
+      <section class="intro">
+        <div class="eyebrow"><span class="eyebrow-line"></span> PENERIMAAN SANTRI BARU</div>
+        <h1>Menuntut ilmu,<br><span>membangun akhlak.</span></h1>
+        <p class="intro-copy">Selamat datang di pendaftaran santri baru Pondok Pesantren Darut Taqwa 4. Silakan lengkapi formulir dengan data yang benar dan sesuai dokumen.</p>
+        <div class="verse">
+          <div class="verse-arabic" lang="ar" dir="rtl">رَبِّ زِدْنِي عِلْمًا</div>
+          <div class="verse-translation">“Ya Tuhanku, tambahkanlah ilmu kepadaku.”</div>
+          <small>QS. Taha: 114</small>
+        </div>
+        <div class="steps">
+          <div class="step"><span class="step-number">01</span><span><b>Isi formulir</b><small>Lengkapi data calon santri dan orang tua.</small></span></div>
+          <div class="step"><span class="step-number">02</span><span><b>Kirim pendaftaran</b><small>Data tersimpan di sistem pendaftaran.</small></span></div>
+          <div class="step"><span class="step-number">03</span><span><b>Simpan nomor registrasi</b><small>Catat nomor untuk proses selanjutnya.</small></span></div>
+        </div>
+        <div class="privacy-note"><span class="lock-icon">▣</span><span>Data digunakan untuk keperluan administrasi penerimaan santri baru.</span></div>
+      </section>
+
+      <section class="form-card" aria-labelledby="form-title">
+        <div class="form-heading">
+          <div>
+            <div class="form-kicker">FORMULIR PENDAFTARAN</div>
+            <h2 id="form-title">Data calon santri</h2>
+            <p>Isi semua kolom bertanda <em>*</em> dengan lengkap.</p>
+          </div>
+          <div class="form-icon" aria-hidden="true">✦</div>
+        </div>
+
+        <form id="registration-form">
+          <div class="section-label"><span>01</span> Identitas calon santri</div>
+          <div class="field">
+            <label for="studentName">Nama lengkap calon santri <em>*</em></label>
+            <input id="studentName" name="studentName" type="text" placeholder="Sesuai akta kelahiran / ijazah" autocomplete="name" maxlength="120" required>
+          </div>
+          <div class="field-grid">
+            <div class="field">
+              <label for="birthPlace">Tempat lahir <em>*</em></label>
+              <input id="birthPlace" name="birthPlace" type="text" placeholder="Kota kelahiran" maxlength="80" required>
+            </div>
+            <div class="field">
+              <label for="birthDate">Tanggal lahir <em>*</em></label>
+              <input id="birthDate" name="birthDate" type="date" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="gender">Jenis kelamin <em>*</em></label>
+            <select id="gender" name="gender" required>
+              <option value="">Pilih jenis kelamin</option>
+              <option value="Laki-laki">Laki-laki</option>
+              <option value="Perempuan">Perempuan</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="school">Asal sekolah <em>*</em></label>
+            <input id="school" name="school" type="text" placeholder="Nama sekolah sebelumnya" maxlength="150" required>
+          </div>
+          <div class="field">
+            <label for="classChoice">Pilihan kelas / jenjang <em>*</em></label>
+            <select id="classChoice" name="classChoice" required>
+              <option value="">Pilih kelas / jenjang</option>
+              <option value="Kelas 1">Kelas 1</option>
+              <option value="Kelas 2">Kelas 2</option>
+              <option value="Kelas 3">Kelas 3</option>
+              <option value="Kelas 4">Kelas 4</option>
+              <option value="Kelas 5">Kelas 5</option>
+              <option value="Kelas 6">Kelas 6</option>
+              <option value="Jenjang lainnya">Jenjang lainnya</option>
+            </select>
+            <small class="field-hint">Silakan sesuaikan daftar kelas dengan jenjang yang dibuka pesantren.</small>
+          </div>
+
+          <div class="section-label section-spaced"><span>02</span> Data orang tua / wali</div>
+          <div class="field">
+            <label for="parentName">Nama orang tua / wali <em>*</em></label>
+            <input id="parentName" name="parentName" type="text" placeholder="Nama lengkap orang tua / wali" maxlength="120" required>
+          </div>
+          <div class="field-grid">
+            <div class="field">
+              <label for="phone">Nomor WhatsApp <em>*</em></label>
+              <input id="phone" name="phone" type="tel" placeholder="08xxxxxxxxxx" autocomplete="tel" maxlength="24" required>
+            </div>
+            <div class="field">
+              <label for="email">Alamat email</label>
+              <input id="email" name="email" type="email" placeholder="nama@email.com" autocomplete="email" maxlength="120">
+            </div>
+          </div>
+          <div class="field">
+            <label for="address">Alamat lengkap <em>*</em></label>
+            <textarea id="address" name="address" rows="3" placeholder="Jalan, desa/kelurahan, kecamatan, kabupaten/kota" maxlength="500" required></textarea>
+          </div>
+          <div class="field">
+            <label for="notes">Catatan tambahan <span class="optional">(opsional)</span></label>
+            <textarea id="notes" name="notes" rows="2" placeholder="Informasi tambahan untuk panitia PPDB" maxlength="500"></textarea>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" id="consent" required>
+            <span>Saya menyatakan data yang diisi benar dan memberikan izin penggunaannya untuk keperluan administrasi PPDB Darut Taqwa 4.</span>
+          </label>
+
+          <div class="form-message" id="form-message" role="status" aria-live="polite"></div>
+          <button class="submit-button" id="submit-button" type="submit">
+            <span>Kirim formulir pendaftaran</span><span class="button-arrow">→</span>
+          </button>
+          <p class="form-footnote"><span>●</span> Pastikan data sudah benar sebelum dikirim.</p>
+        </form>
+
+        <div class="success-panel" id="success-panel" hidden>
+          <div class="success-check">✓</div>
+          <div class="success-kicker">PENDAFTARAN BERHASIL DIKIRIM</div>
+          <h2>Jazakumullahu khairan!</h2>
+          <p>Terima kasih telah mendaftarkan calon santri di PPDB Darut Taqwa 4. Data telah diterima oleh sistem.</p>
+          <div class="registration-number">
+            <span>Nomor registrasi PPDB</span>
+            <strong id="registration-number">-</strong>
+          </div>
+          <button type="button" class="submit-button" id="copy-button"><span>Salin nomor registrasi</span><span>⧉</span></button>
+          <button type="button" class="text-button" id="new-registration">Kirim pendaftaran lainnya</button>
+          <p class="success-reminder">Simpan nomor registrasi dan hubungi panitia pesantren untuk informasi tahapan berikutnya.</p>
+        </div>
+      </section>
+    </main>
+    <footer><strong>PPDB DARUT TAQWA 4</strong><span>© <span id="year"></span> · Sistem Pendaftaran Santri Baru</span></footer>
+  </div>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>
