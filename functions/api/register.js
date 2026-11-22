@@ -11,9 +11,18 @@ export async function onRequestPost({ request, env }) {
         return Response.json({ success: false, message: "Mohon lengkapi semua kolom wajib." }, { status: 400, headers });
       }
     }
-    if (data.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
-      return Response.json({ success: false, message: "Format email tidak valid." }, { status: 400, headers });
-    }
+const email = String(data.email ?? "").trim();
+
+if (email !== "" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+  return Response.json({
+    success: false,
+    message: "Format email tidak valid. Periksa kembali alamat email Anda."
+  }, { status: 400, headers });
+}
+
+// Simpan email yang sudah dibersihkan dari spasi
+data.email = email;
+    
     const upstream = await fetch(env.APPS_SCRIPT_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
