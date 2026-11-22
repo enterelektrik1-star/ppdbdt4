@@ -16,7 +16,7 @@ const email = String(data.email ?? "").trim();
 if (email !== "" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
   return Response.json({
     success: false,
-    message: "Format email tidak valid. Periksa kembali alamat email Anda."
+    message: "Format email tidak valid. Periksa alamat email Anda."
   }, { status: 400, headers });
 }
 
